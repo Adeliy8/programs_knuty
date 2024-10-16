@@ -6,7 +6,7 @@ import (
 )
 
 func caesarCipher(i rune, shift int) rune {
-	if unicode.IsLetter(i) { // Проверяем, является ли символ буквой
+	if unicode.IsLetter(i) {
 		base := 'A'
 		if unicode.IsLower(i) {
 			base = 'a'
@@ -24,7 +24,7 @@ func encrypt(text string, shift int) string {
 	return result
 }
 
-func enigma() {
+func main() {
 	text := "Hello, World 123456789!"
 	encryptedText := encrypt(text, 3)
 	fmt.Println(encryptedText)
