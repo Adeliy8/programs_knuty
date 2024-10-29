@@ -1,3 +1,4 @@
+# метод Гаусса
 import numpy as np
 import threading
 
